@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breast-cancer-survivability-ml"
+version = "0.1.0"
+description = "Privacy-preserving demonstration of explainable ML for breast cancer survivability"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nader R. Abdalnabi"}]
+dependencies = [
+  "imbalanced-learn>=0.12",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scikit-learn>=1.4",
+  "seaborn>=0.13",
+  "xgboost>=2.0",
+]
+
+[project.optional-dependencies]
+explain = ["shap>=0.45"]
+dev = ["jupyter>=1.0", "pytest>=8.0"]
+
+[project.scripts]
+breast-cancer-demo = "breast_cancer_ml.run_demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
