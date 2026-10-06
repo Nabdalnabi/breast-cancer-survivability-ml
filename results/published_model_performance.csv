@@ -1,0 +1,7 @@
+model,precision,recall,f1,accuracy,roc_auc,auc_pr,cross_validation_accuracy
+XGBoost,0.956,0.951,0.951,0.951,0.981,0.975,0.920
+Random forest,0.910,0.910,0.910,0.910,0.972,0.961,0.909
+Decision tree,0.814,0.812,0.811,0.812,0.808,0.849,0.879
+Logistic regression,0.900,0.896,0.896,0.896,0.953,0.922,0.906
+Support vector classifier,0.929,0.917,0.917,0.917,0.950,0.916,0.927
+AdaBoost,0.931,0.931,0.931,0.931,0.960,0.915,0.909
