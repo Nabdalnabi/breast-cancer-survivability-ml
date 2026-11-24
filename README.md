@@ -1,6 +1,8 @@
 # Explainable Machine Learning for Breast Cancer Survivability
 
-Privacy-preserving, recruiter-facing implementation accompanying the study **“Impact of Tumor Location on Predicting Breast Cancer Patient Survivability Using Explainable Machine Learning Models.”**
+[![tests](https://github.com/Nabdalnabi/breast-cancer-survivability-ml/actions/workflows/tests.yml/badge.svg)](https://github.com/Nabdalnabi/breast-cancer-survivability-ml/actions/workflows/tests.yml)
+
+Privacy-preserving implementation accompanying the study **“Impact of Tumor Location on Predicting Breast Cancer Patient Survivability Using Explainable Machine Learning Models.”**
 
 ## Project overview
 
@@ -55,10 +57,8 @@ comparison is descriptive and must not be reused for tuning.
 The demonstration creates a synthetic cohort, trains all six models, writes aggregate metrics, and saves ROC and precision-recall figures. Synthetic-demo metrics are illustrative and should not be compared with the published clinical results.
 
 On macOS, XGBoost requires an OpenMP runtime (normally `brew install libomp`).
-The restored package passed two tests and a complete six-model synthetic run,
-including ROC, precision-recall, and SHAP figures, using Python 3.12 and XGBoost
-2.1.4. No clinical training or reproduction was performed. Legacy root-level
-notebook/result files are retained; the folders above are the canonical layout.
+Tested with Python 3.12 and XGBoost 2.1.4: the test suite and a complete six-model
+synthetic run (ROC, precision-recall, and SHAP figures) pass.
 
 ## Published aggregate results
 
